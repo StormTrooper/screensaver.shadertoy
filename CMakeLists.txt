@@ -1,7 +1,9 @@
 cmake_minimum_required(VERSION 3.5)
 project(screensaver.shadertoy)
 
+set(APP_RENDER_SYSTEM, "glm")
 message ("APP_RENDER_SYSTEM:  ${APP_RENDER_SYSTEM}")
+
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR})
 
