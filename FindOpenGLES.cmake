@@ -15,7 +15,7 @@
 # *_DEFINITIONS are undefined, but are set
 # global by the kodi-angle package.
 
-message( ${CORE_PLATFORM_NAME_LC} )
+message(" ${CORE_PLATFORM_NAME_LC} ")
 
 if(WIN32)
   # defined here and not on addon to have it free of OS related 'if'
