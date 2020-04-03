@@ -1,8 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
 project(screensaver.shadertoy)
-message ("TEST")
-message("CORE: ${CORE_PLATFORM_NAME_LC}")
-
 
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR})
