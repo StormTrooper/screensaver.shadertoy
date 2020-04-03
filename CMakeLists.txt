@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.5)
 project(screensaver.shadertoy)
 
-set(APP_RENDER_SYSTEM "gl")
+set(APP_RENDER_SYSTEM "glm")
 message ("APP_RENDER_SYSTEM:  ${APP_RENDER_SYSTEM}")
 
 
@@ -11,11 +11,13 @@ find_package(Kodi REQUIRED)
 find_package(glm REQUIRED)
 
 if(NOT WIN32 AND (APP_RENDER_SYSTEM STREQUAL "gl" OR NOT APP_RENDER_SYSTEM))
+  message ("TEST1")
   find_package(OpenGl REQUIRED)
   set(DEPLIBS ${OPENGL_LIBRARIES})
   set(includes ${OPENGL_INCLUDE_DIR})
   add_definitions(${OPENGL_DEFINITIONS})
 else()
+  message ("TEST2")
   find_package(OpenGLES REQUIRED)
   set(DEPLIBS ${OPENGLES_LIBRARIES})
   set(includes ${OPENGLES_INCLUDE_DIR})
