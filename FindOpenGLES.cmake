@@ -16,8 +16,8 @@
 # global by the kodi-angle package.
 
 #set(CORE_PLATFORM_NAME_LC "rbpi")
-set(OPENGLES_gl_LIBRARY "/opt/vc/lib")
-set(OPENGLES_INCLUDE_DIR "/opt/vc/include")
+#set(OPENGLES_gl_LIBRARY "/opt/vc/lib")
+#set(OPENGLES_INCLUDE_DIR "/opt/vc/include")
 
 
 
