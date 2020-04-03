@@ -17,6 +17,8 @@
 
 set(CORE_PLATFORM_NAME_LC "rbpi")
 message(" ${CORE_PLATFORM_NAME_LC} ")
+message(" ${OPENGLES_gl_LIBRARY} ")
+
 
 if(WIN32)
   # defined here and not on addon to have it free of OS related 'if'
