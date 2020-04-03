@@ -15,6 +15,7 @@
 # *_DEFINITIONS are undefined, but are set
 # global by the kodi-angle package.
 
+set(CORE_PLATFORM_NAME_LC "rbpi")
 message(" ${CORE_PLATFORM_NAME_LC} ")
 
 if(WIN32)
