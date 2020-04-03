@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.5)
 project(screensaver.shadertoy)
 
-set(APP_RENDER_SYSTEM "glm")
+set(APP_RENDER_SYSTEM "gl")
 message ("APP_RENDER_SYSTEM:  ${APP_RENDER_SYSTEM}")
 
 
