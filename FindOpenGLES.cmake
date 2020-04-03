@@ -16,8 +16,9 @@
 # global by the kodi-angle package.
 
 set(CORE_PLATFORM_NAME_LC "rbpi")
-message(" ${CORE_PLATFORM_NAME_LC} ")
-message(" ${OPENGLES_gl_LIBRARY} ")
+set(OPENGLES_gl_LIBRARY "/opt/vc/library")
+
+
 
 
 if(WIN32)
