@@ -14,7 +14,7 @@ find_package(Kodi REQUIRED)
 find_package(glm REQUIRED)
 
 
-set(APP_RENDER_SYSTEM FALSE)
+#set(APP_RENDER_SYSTEM FALSE)
 if(NOT APP_RENDER_SYSTEM)
   message("test41")
  endif()
