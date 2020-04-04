@@ -5,6 +5,15 @@ project(screensaver.shadertoy)
 message ("OPENGLES_gl_LIBRARY:  ${OPENGLES_gl_LIBRARY}")
 
 
+if (UNIX)
+    message("unix")#do something
+endif (UNIX)
+
+if (WIN32)
+    message("win32")#do something
+endif (WIN32)
+
+
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR})
 
 find_package(Kodi REQUIRED)
