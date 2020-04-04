@@ -13,9 +13,18 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR})
 find_package(Kodi REQUIRED)
 find_package(glm REQUIRED)
 
+
+set(APP_RENDER_SYSTEM FALSE)
 if(NOT APP_RENDER_SYSTEM)
-  message("test4")
+  message("test41")
  endif()
+
+
+set(APP_RENDER_SYSTEM TRUE)
+if(NOT APP_RENDER_SYSTEM)
+  message("test42")
+ endif()
+ 
 
 if(APP_RENDER_SYSTEM STREQUAL "gl")
   message("test5")
