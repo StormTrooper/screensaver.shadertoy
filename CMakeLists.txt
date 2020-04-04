@@ -1,17 +1,11 @@
 cmake_minimum_required(VERSION 3.5)
 project(screensaver.shadertoy)
 
-#set(APP_RENDER_SYSTEM "gl")
+set(APP_RENDER_SYSTEM "glm")
 message ("OPENGLES_gl_LIBRARY:  ${OPENGLES_gl_LIBRARY}")
 
+message ("APP_RENDER_SYSTEM:  ${APP_RENDER_SYSTEM}")
 
-if (UNIX)
-    message("unix")#do something
-endif (UNIX)
-
-if (WIN32)
-    message("win32")#do something
-endif (WIN32)
 
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR})
@@ -19,11 +13,19 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR})
 find_package(Kodi REQUIRED)
 find_package(glm REQUIRED)
 
+if(NOT WIN32 AND (APP_RENDER_SYSTEM STREQUAL "gl" OR NOT APP_RENDER_SYSTEM))
+  message("test1)
+  find_package(OpenGl REQUIRED)
+  set(DEPLIBS ${OPENGL_LIBRARIES})
+  set(includes ${OPENGL_INCLUDE_DIR})
+  add_definitions(${OPENGL_DEFINITIONS})
+else()
+  find_package(OpenGLES REQUIRED)
+  set(DEPLIBS ${OPENGLES_LIBRARIES})
+  set(includes ${OPENGLES_INCLUDE_DIR})
+  add_definitions(${OPENGLES_DEFINITIONS})
+endif()
 
-find_package(OpenGLES REQUIRED)
-set(DEPLIBS ${OPENGLES_LIBRARIES})
-set(includes ${OPENGLES_INCLUDE_DIR})
-add_definitions(${OPENGLES_DEFINITIONS})
 
 
 include_directories(${GLM_INCLUDE_DIR}
