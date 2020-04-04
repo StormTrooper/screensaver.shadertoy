@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.5)
 project(screensaver.shadertoy)
 
-set(APP_RENDER_SYSTEM "gl")
-message ("APP_RENDER_SYSTEM:  ${APP_RENDER_SYSTEM}")
+#set(APP_RENDER_SYSTEM "gl")
+message ("OPENGLES_gl_LIBRARY:  ${OPENGLES_gl_LIBRARY}")
 
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR})
