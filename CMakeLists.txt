@@ -2,11 +2,11 @@ cmake_minimum_required(VERSION 3.5)
 project(screensaver.shadertoy)
 
 #set(APP_RENDER_SYSTEM "0")
-message ("OPENGLES_gl_LIBRARY:  ${OPENGLES_gl_LIBRARY}")
+message ("CM OPENGLES_gl_LIBRARY:  ${OPENGLES_gl_LIBRARY}")
 
-message ("APP_RENDER_SYSTEM:  ${APP_RENDER_SYSTEM}")
-message ("VAR1: ${OPENGLES_gl_LIBRARY}")
-message ("VAR2: ${OPENGLES_INCLUDE_DIR}")
+message ("CM APP_RENDER_SYSTEM:  ${APP_RENDER_SYSTEM}")
+message ("CM VAR1: ${OPENGLES_gl_LIBRARY}")
+message ("CM VAR2: ${OPENGLES_INCLUDE_DIR}")
 
 
 
