@@ -5,6 +5,8 @@ project(screensaver.shadertoy)
 message ("OPENGLES_gl_LIBRARY:  ${OPENGLES_gl_LIBRARY}")
 
 message ("APP_RENDER_SYSTEM:  ${APP_RENDER_SYSTEM}")
+message ("VAR1: ${OPENGLES_gl_LIBRARY}")
+message ("VAR2: ${OPENGLES_INCLUDE_DIR}")
 
 
 
