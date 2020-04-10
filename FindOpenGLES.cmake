@@ -18,6 +18,8 @@
 #set(OPENGLES_gl_LIBRARY "/opt/vc/lib")
 #set(OPENGLES_INCLUDE_DIR "/opt/vc/include")
 
+message ("VAR3: ${OPENGLES_gl_LIBRARY}")
+message ("VAR4: ${OPENGLES_INCLUDE_DIR}")
 message ("TEST APP_RENDER_SYSTEM:  ${APP_RENDER_SYSTEM}")
 
 
@@ -61,8 +63,12 @@ else()
   find_path(OPENGLES3_INCLUDE_DIR GLES3/gl3.h)
 
   include(FindPackageHandleStandardArgs)
+  message ("LOC6")
+
   find_package_handle_standard_args(OpenGLES
                                     REQUIRED_VARS OPENGLES_gl_LIBRARY OPENGLES_INCLUDE_DIR)
+
+  message ("LOC7")
 
   find_path(OPENGLES3_INCLUDE_DIR GLES3/gl3.h
                                   PATHS ${PC_OPENGLES_INCLUDEDIR})
