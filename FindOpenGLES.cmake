@@ -18,7 +18,7 @@
 #set(OPENGLES_gl_LIBRARY "/opt/vc/lib")
 #set(OPENGLES_INCLUDE_DIR "/opt/vc/include")
 
-
+message ("TEST APP_RENDER_SYSTEM:  ${APP_RENDER_SYSTEM}")
 
 
 if(WIN32)
