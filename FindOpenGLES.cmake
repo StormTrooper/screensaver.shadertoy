@@ -18,9 +18,9 @@
 #set(OPENGLES_gl_LIBRARY "/opt/vc/lib")
 #set(OPENGLES_INCLUDE_DIR "/opt/vc/include")
 
-message ("Find VAR3: ${OPENGLES_gl_LIBRARY}")
-message ("Find VAR4: ${OPENGLES_INCLUDE_DIR}")
-message ("Find TEST APP_RENDER_SYSTEM:  ${APP_RENDER_SYSTEM}")
+message ("Find1 VAR3: ${OPENGLES_gl_LIBRARY}")
+message ("Find1 VAR4: ${OPENGLES_INCLUDE_DIR}")
+message ("Find1 TEST APP_RENDER_SYSTEM:  ${APP_RENDER_SYSTEM}")
 
 
 if(WIN32)
