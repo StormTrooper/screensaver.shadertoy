@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.5)
 project(screensaver.shadertoy)
 
 #set(APP_RENDER_SYSTEM "0")
-message("MYVAR: {$MYVAR} ")
+message("MYVAR: ${MYVAR} ")
 message ("CM OPENGLES_gl_LIBRARY:  ${OPENGLES_gl_LIBRARY}")
 
 message ("CM APP_RENDER_SYSTEM:  ${APP_RENDER_SYSTEM}")
