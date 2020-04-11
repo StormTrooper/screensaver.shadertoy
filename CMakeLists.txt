@@ -22,7 +22,7 @@ if(NOT APP_RENDER_SYSTEM)
  endif()
 
 
-set(APP_RENDER_SYSTEM TRUE)
+
 if(NOT APP_RENDER_SYSTEM)
   message("test42")
  endif()
