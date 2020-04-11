@@ -44,7 +44,7 @@ else()
 
   if(NOT CORE_SYSTEM_NAME STREQUAL ios AND
      NOT CORE_SYSTEM_NAME STREQUAL darwin_embedded)
-    message ("LOC3")
+    message ("LOC31")
     find_path(OPENGLES_INCLUDE_DIR GLES2/gl2.h
                                    PATHS ${PC_OPENGLES_INCLUDEDIR})
     find_library(OPENGLES_gl_LIBRARY NAMES ${_brcmprefix}GLESv2
